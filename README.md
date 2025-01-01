@@ -42,9 +42,24 @@ The design incorporates byte-enable signals for each memory location, enabling p
 
 ## Gantt Chart for Extended Project (PROJ3999)
 
-![Gantt Chart for Extended Project PROJ3999](<INSERT_IMAGE_URL_HERE>)
+| **Week** | **Phase**                     | **Activities**                                             |
+|----------|--------------------------------|-----------------------------------------------------------|
+| Week 1   | **Design and Architecture**   | Initial system design and architecture definition          |
+| Week 2   | **Design and Architecture**   | Refinement of design specifications                        |
+| Week 3   | **Design and Architecture**   | Finalize architecture and prepare for implementation       |
+| Week 4   | **Verification and Test**     | Develop SystemVerilog test benches                        |
+| Week 5   | **Verification and Test**     | Test edge cases and debug initial issues                  |
+| Week 6   | **Verification and Test**     | Validate preliminary results and refine test cases        |
+| Week 7   | **Toolchain Utilization**     | Set up Xilinx Vivado for synthesis and simulation          |
+| Week 8   | **Toolchain Utilization**     | Perform FPGA testing and resolve toolchain issues         |
+| Week 9   | **Toolchain Utilization**     | Verify integration with hardware                          |
+| Week 10  | **Optimization and Resources**| Begin resource optimization                                |
+| Week 11  | **Optimization and Resources**| Address scalability and ensure low-power design           |
+| Week 12  | **Optimization and Resources**| Test and validate optimized design                        |
+| Week 13  | **Validation and Refinement** | Transition design to SystemVerilog                        |
+| Week 14  | **Validation and Refinement** | Begin UVM-based validation                                |
+| Week 15  | **Validation and Refinement** | Finalize validation and prepare resul
 
-*(Replace `<INSERT_IMAGE_URL_HERE>` with the URL of the uploaded image.)*
 
 ---
 
