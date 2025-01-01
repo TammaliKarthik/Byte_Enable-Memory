@@ -41,6 +41,20 @@ The design incorporates byte-enable signals for each memory location, enabling p
 ---
 
 ## Gantt Chart for Extended Project (PROJ3999)
+# *Project Timeline*
+
+| *Task*                 | *Start Date* | *End Date* | *Duration* |
+|--------------------------|----------------|--------------|--------------|
+| Consent Form Submission  | 13 Aug         | 21 Aug       | 7 Days       |
+| Project Selection        | 2 Aug          | 13 Aug       | 8 Days       |
+| Batch Preparation        | 31 Jul         | 2 Aug        | 3 Days       |
+| Literature Survey        | 29 Aug         | 29 Aug       | 1 Day        |
+| Abstract                 | 21 Aug         | 29 Aug       | 7 Days       |
+| Code Development         | 6 Sep          | 25 Sep       | 14 Days      |
+| Prepared PPT             | 25 Sep         | 27 Sep       | 2 Days       |
+| Prepared Poster          | 27 Sep         | 2 Oct        | 4 Days       |
+| Extended Consent Form    | 2 Oct          | 10 Oct       | 7 Days       |
+## Gantt Chart for Extended Project (PROJ3999)
 
 | **Week** | **Phase**                     | **Activities**                                             |
 |----------|--------------------------------|-----------------------------------------------------------|
