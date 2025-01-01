@@ -1,4 +1,5 @@
-# Byte_Enable-Memory# PROJ3999: Major Project
+# Byte_Enable-Memory
+# PROJ3999: Major Project
 
 ## Title
 **Byte-Enable Memory Implementation on FPGA with Verilog and SystemVerilog-Driven Testbenches**
@@ -41,7 +42,9 @@ The design incorporates byte-enable signals for each memory location, enabling p
 
 ## Gantt Chart for Extended Project (PROJ3999)
 
-*(Placeholder for Gantt chart graphic - can be added as an image or link)*
+![Gantt Chart for Extended Project PROJ3999](<INSERT_IMAGE_URL_HERE>)
+
+*(Replace `<INSERT_IMAGE_URL_HERE>` with the URL of the uploaded image.)*
 
 ---
 
@@ -58,4 +61,5 @@ The design incorporates byte-enable signals for each memory location, enabling p
 |------------------|---------------|
 | BU21EECE0100164 | Tammali Karthik |
 | BU21EECE0100309 | Maria Punya    |
+
 
