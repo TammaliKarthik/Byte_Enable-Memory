@@ -1,1 +1,114 @@
 
+# Byte-Enable Memory Implementation on FPGA
+
+## Project Overview
+This project focuses on designing and implementing a **Byte-Enable Memory** using **Verilog** and **SystemVerilog** on an **FPGA** platform. The primary goal is to allow efficient **byte-level read/write operations**, enhancing memory utilization and reducing unnecessary data modifications.
+
+## Key Features
+- **Selective Byte Access:** Modify specific bytes within a word without altering others.
+- **Optimized Memory Utilization:** Reduces write amplification and improves performance.
+- **Hardware Description:** Developed using Verilog and SystemVerilog.
+- **Synthesis & Simulation:** Implemented on **Xilinx Vivado**.
+- **FPGA Implementation:** Tested on an FPGA kit.
+- **Efficient Debugging & Verification:** Exhaustive testbenches and validation techniques.
+
+## Project Structure
+```
+📂 Byte-Enable-Memory
+ ├── 📁 src             # Verilog & SystemVerilog source files
+ ├── 📁 testbench       # Testbenches for verification
+ ├── 📁 docs           # Project documentation
+ ├── 📁 constraints    # FPGA constraint files
+ ├── README.md         # Project description
+ ├── LICENSE           # License details
+ ├── simulation.v      # Simulation script
+ ├── synthesis.tcl     # Synthesis script for FPGA
+```
+
+## Implementation Details
+### 1. **Verilog Implementation**
+The core memory module is designed in Verilog with the following structure:
+```verilog
+module BYTE_ENABLE_RAM(
+    input clk,
+    input rst,
+    input cen,
+    input wr,
+    input [3:0] byte_en,
+    input [3:0] data_in,
+    input [3:0] addr_in,
+    output reg [3:0] q
+);
+
+    reg [3:0] ram [0:15];
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            integer i;
+            for (i = 0; i < 16; i = i + 1)
+                ram[i] <= 4'b0000;
+        end else if (cen && wr) begin
+            if (byte_en[0]) ram[addr_in][0] <= data_in[0];
+            if (byte_en[1]) ram[addr_in][1] <= data_in[1];
+            if (byte_en[2]) ram[addr_in][2] <= data_in[2];
+            if (byte_en[3]) ram[addr_in][3] <= data_in[3];
+        end
+    end
+
+    always @(posedge clk) begin
+        if (cen && !wr)
+            q <= ram[addr_in];
+    end
+endmodule
+```
+
+### 2. **Simulation & Testing**
+- **Testbenches:** Developed to verify correct byte enable functionality.
+- **Timing Analysis:** Ensures minimal latency and accurate byte-level modifications.
+- **FPGA Validation:** Implemented on an FPGA kit for real-time performance analysis.
+
+### 3. **Hardware Setup & Constraints**
+#### **Pin Configuration**
+| Signal       | Pin  | Function        |
+|-------------|------|----------------|
+| clk         | E3   | Clock Input     |
+| rst         | P3   | Reset Signal    |
+| cen         | P4   | Chip Enable     |
+| wr          | R3   | Write Enable    |
+| byte_en[3:0]| V2,U2,T3,T1 | Byte Enable Bits |
+| data_in[3:0]| V7,V6,V5,U4 | 4-bit Data Input |
+| addr_in[3:0]| U6,V4,U3,V1 | 4-bit Address Input |
+| q[3:0]      | V9,R8,T6,T5 | 4-bit RAM Output |
+
+## Results & Performance
+- **Reduced Power Consumption:** Uses clock gating techniques.
+- **Higher Memory Efficiency:** Selective write operations reduce data redundancy.
+- **Optimized Resource Utilization:** Uses minimal logic gates and FPGA resources.
+- **Low Latency:** Ensures high-speed data access with minimal delay.
+
+## Future Enhancements
+- **Implement Error Correction Mechanisms (ECC)** for better data integrity.
+- **Optimize for Multi-Port Memory Architectures** to improve parallel processing.
+- **Support for AXI and AHB Interfaces** to enable seamless SoC integration.
+- **Develop a GUI-Based Testing Framework** for real-time validation.
+
+## References
+- Research papers on **Byte-Enable RAM Optimization**.
+- IEEE papers on **Efficient Memory Design for FPGA**.
+- Verilog/SystemVerilog standard documentation.
+
+## Contribution
+Feel free to contribute to the project! You can:
+- Fork the repository.
+- Improve the testbenches.
+- Optimize the Verilog implementation.
+- Suggest new features via issues.
+
+## License
+This project is licensed under the **MIT License**.
+
+## Video Demonstration
+Watch the FPGA implementation here: [Demo Video](https://drive.google.com/file/d/14aH5_QfjVjb39AiBHF_GtEjI_ffcCK-7/view?usp=sharing)
+
+## GitHub Repository
+[Byte-Enable Memory on GitHub](https://github.com/TammaliKarthik/Byte-Enable-Memory)
