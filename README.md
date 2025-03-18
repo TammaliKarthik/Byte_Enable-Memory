@@ -54,6 +54,13 @@ The design incorporates byte-enable signals for each memory location, enabling p
 | Prepared PPT             | 25 Sep         | 27 Sep       | 2 Days       |
 | Prepared Poster          | 27 Sep         | 2 Oct        | 4 Days       |
 | Extended Consent Form    | 2 Oct          | 10 Oct       | 7 Days       |
+| Continuation of analyzing the problem statement     | 28 Nov         | 4 Dec        | 7 Days       |
+| Working on the application of the project.| 7 Dec          | 31 Dec       | 24 Days       |
+| Review-1 | 8 Jan 2025      | 10 Jan 2025     | 2 Days       |
+| Implementation in the FPGA kit.| 15 Jan          | 30 Jan       | 15 Days       |
+| Review  | 5 Feb        | 7 Feb       | 2 Days       |
+| Writing of the conference paper| 10  Feb          | 28 Feb       | 18 Days       |
+| Review-3 | 15 Mar         | 20 Mar       | 5 Days       |
 ## Gantt Chart for Extended Project (PROJ3999)
 
 | **Week** | **Phase**                     | **Activities**                                             |
@@ -72,7 +79,7 @@ The design incorporates byte-enable signals for each memory location, enabling p
 | Week 12  | **Optimization and Resources**| Test and validate optimized design                        |
 | Week 13  | **Validation and Refinement** | Transition design to SystemVerilog                        |
 | Week 14  | **Validation and Refinement** | Begin UVM-based validation                                |
-| Week 15  | **Validation and Refinement** | Finalize validation and prepare resul
+| Week 15  | **Validation and Refinement** | Finalize validation and prepare results
 
 
 ---
