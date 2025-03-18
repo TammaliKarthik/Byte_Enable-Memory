@@ -1,0 +1,12 @@
+Test Cases:
+
+Basic Read/Write Operations: Verify byte-level read/write operations and data integrity across different memory addresses with varying data widths and byte-enable signals.
+Selective Byte Access: Ensure proper partial word modifications, validate masking, and verify enable signals during selective byte updates.
+Simultaneous Operations: Test concurrent read and write operations for data consistency and conflict resolution at the same or different addresses.
+Boundary and Error Handling: Validate handling of address overflows, invalid byte enables, and fault detection mechanisms, ensuring proper error handling and system response
+
+Use Cases:
+
+Embedded Systems and IoT Devices – Suitable for efficient memory management in systems requiring byte-level data manipulation and real-time processing.
+Digital Signal Processing (DSP) Applications – Supports high-performance data buffering and streaming operations, enabling selective data access for processing tasks.
+FPGA-Based Prototyping – Provides a scalable and reusable memory design optimized for FPGA-based testing, prototyping, and implementation in diverse applications.
