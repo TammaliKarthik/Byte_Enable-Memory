@@ -84,10 +84,12 @@ The design incorporates byte-enable signals for each memory location, enabling p
 
 ---
 
-## Suggested IEEE Conference Targets
+## Suggested Conference Targets
 
-1. **IEEE CONECCT 2025**
-2. **IEEE INDICON 2025**
+1. **INTERNATIONAL CONFERENCE ON ADVANCEMENT IN COMMUNICATION AND COMPUTING TECHNOLOGY 2025**
+2. **5TH INTERNATIONAL CONFERENCE FOR INTELLIGENT TECHNOLOGIES.2025**
+3. **INTERNATIONAL CONFERENCE ON ELECTRONICS, AI AND COMPUTING.**
+
 
 ---
 
